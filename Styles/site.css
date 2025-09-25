@@ -1,0 +1,158 @@
+﻿:root {
+    --theme-color: #287bff;
+    --bg: #f7f8fb;
+    --text: #333;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.site-header {
+    background: var(--theme-color);
+    color: white;
+    padding: 10px 0;
+}
+
+    .site-header h1 {
+        display: inline-block;
+        margin: 0;
+    }
+
+        .site-header h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .site-header .nav {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+        .site-header .nav a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+    .site-header .user-panel {
+        float: right;
+        margin-top: 10px;
+    }
+
+.theme-picker {
+    padding: 10px 0;
+}
+
+.swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    margin-top: 10px;
+    min-height: 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.home {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 220px;
+}
+
+.main-list {
+    flex: 1;
+}
+
+.posts-list .post {
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+}
+
+.post h3 {
+    margin: 0 0 5px 0;
+}
+
+.post .meta {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.post .excerpt {
+    color: #333;
+}
+
+.auth-box, .post-editor {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 12px;
+}
+
+    .form-row label {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .form-row input[type="text"], .form-row textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+.message {
+    color: #c00;
+}
+
+.site-footer {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.comment {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.c-author {
+    font-weight: bold;
+}
+
+.c-body {
+    margin-top: 6px;
+}
+
+@media (max-width:1100px) {
+    .container {
+        width: 96%;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+}
